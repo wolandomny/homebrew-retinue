@@ -5,20 +5,20 @@
 class Retinue < Formula
   desc "AI-powered parallel task orchestration for codebases"
   homepage "https://github.com/wolandomny/retinue"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wolandomny/retinue/releases/download/v0.2.0/retinue_darwin_amd64.tar.gz"
-      sha256 "559e5e5c8c4ab572f36520e55b9be2e53541aa846ee35c2f00c36d0e13454c92"
+      url "https://github.com/wolandomny/retinue/releases/download/v0.2.1/retinue_darwin_amd64.tar.gz"
+      sha256 "292f55b00996b8e9b2626c4a862fb1491f60a9d344a0ec5a9fdadb628898ad4e"
 
       define_method(:install) do
         bin.install "retinue"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wolandomny/retinue/releases/download/v0.2.0/retinue_darwin_arm64.tar.gz"
-      sha256 "d093e8dcb80405f421e2b3b44dd488758e2cc04b153b2e609e2306817878b9b2"
+      url "https://github.com/wolandomny/retinue/releases/download/v0.2.1/retinue_darwin_arm64.tar.gz"
+      sha256 "3b0102d9e3f1e5b80e1c97a866b2a26ed3f80e5f773634f8724a97983392c4b5"
 
       define_method(:install) do
         bin.install "retinue"
@@ -28,15 +28,15 @@ class Retinue < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wolandomny/retinue/releases/download/v0.2.0/retinue_linux_amd64.tar.gz"
-      sha256 "6d0d3d4cd9ecfae1aea6312ff57f2a0da08416434f32951263db74642cb955bd"
+      url "https://github.com/wolandomny/retinue/releases/download/v0.2.1/retinue_linux_amd64.tar.gz"
+      sha256 "adffeb24bf5b2cc804dac6227e204e6ca693a6a1152eb145592ec65f3cfe64a6"
       define_method(:install) do
         bin.install "retinue"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wolandomny/retinue/releases/download/v0.2.0/retinue_linux_arm64.tar.gz"
-      sha256 "f1f1e819654aa7c84b9d09a15a9ccd8a9d5daedbf6524f0ac15c1b0b97df9290"
+      url "https://github.com/wolandomny/retinue/releases/download/v0.2.1/retinue_linux_arm64.tar.gz"
+      sha256 "28b1386d793b121bc3f5aa88274bd02b3a028906db891a14e1c36dc872b5bd85"
       define_method(:install) do
         bin.install "retinue"
       end
